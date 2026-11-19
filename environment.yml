@@ -1,0 +1,19 @@
+name: eng2440-a3
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      # Exact versions used to produce the committed notebook outputs.
+      # CPU-only torch is sufficient — the notebook deliberately trains the GNN on CPU.
+      - numpy==2.2.6
+      - pandas==2.3.3
+      - matplotlib==3.10.7
+      - networkx==3.5
+      - torch==2.11.0
+      - torch-geometric==2.8.1
+      - rdkit==2026.9.2
+      - scikit-learn==1.6.1
+      - jupyter==1.1.1
+      - notebook==7.4.7
