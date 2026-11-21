@@ -228,3 +228,7 @@ report/main.log
 report/main.out
 report/main.pdf
 report/main.synctex.gz
+
+# Report source lives in its own Overleaf-synced repository (report/.git);
+# the PDF is submitted via Moodle, so it is not duplicated here.
+report/
