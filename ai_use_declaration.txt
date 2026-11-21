@@ -1,0 +1,130 @@
+GENERATIVE-AI USE DECLARATION
+ENG 2440 Medical Imaging & AI in Healthcare - Assignment 3
+Molecular Property Prediction with Graph Neural Networks
+
+Student name : Faiz Rizki Ramadhan            <-- CHECK this is how your name appears on Moodle
+Student ID   : 25011106
+Date         : [FILL IN - date of submission]
+
+-------------------------------------------------------------------------------
+STATEMENT OF RESPONSIBILITY
+-------------------------------------------------------------------------------
+
+I remain responsible for every line of code, output, figure, citation and claim
+in this submission. I can explain all submitted work without assistance.
+
+-------------------------------------------------------------------------------
+TOOLS USED
+-------------------------------------------------------------------------------
+
+>>> IMPORTANT: Complete one block per tool you actually used, and delete any
+>>> block that does not apply. Only you know how you used these tools. Do not
+>>> submit this file with [FILL IN] placeholders left in it.
+>>> If you used NO generative-AI tool at all, delete every block below and
+>>> replace this whole section with exactly this sentence:
+>>>   "I did not use a generative-AI or large-language-model tool for this
+>>>    assignment."
+
+--- Tool 1 -------------------------------------------------------------------
+
+Tool / model     : Claude Code (Anthropic), model Claude Opus
+Dates used       : [FILL IN]
+Purpose          : Review of the completed notebook against the assignment
+                   specification, and application of the small corrections
+                   listed below. I wrote the pipeline (data cleaning, splits,
+                   fingerprint baseline, GINE model, evaluation and analysis)
+                   myself; the tool was used after that work was complete.
+                   [EDIT this if it does not match what you actually did.]
+
+Prompts /        : [FILL IN - paste your main prompts, or attach a transcript,
+interaction        or give a link to the session if you have one. Example of
+record             the kind of detail expected:
+                     - "check if there is something missing from the coding
+                        part" (review against the assignment PDF)
+                     - "fix all of this and draft the template"]
+
+Affected         : The following specific changes were made by the tool at my
+sections           instruction, and I have reviewed and understood each one:
+                   1. Part E.4 / F.3 - standard deviations over the three seeds
+                      changed from population std (ddof=0) to sample std
+                      (ddof=1), with the convention stated in the text.
+                      Affected numbers: validation ROC-AUC 0.9294 +/- 0.0077
+                      and 0.9212 +/- 0.0052; test ROC-AUC 0.900 +/- 0.003 and
+                      0.751 +/- 0.013; threshold spreads.
+                   2. Part E.3 - the fingerprint baseline's validation ROC-AUC
+                      reference line is now read from the Part D results object
+                      instead of being hardcoded.
+                   3. Part A.2 - corrected wording about where the RDKit
+                      "Skipping molecule" warnings appear.
+                   4. Part D.1 - Morgan fingerprint generation moved from the
+                      deprecated AllChem.GetMorganFingerprintAsBitVect to
+                      rdkit.Chem.rdFingerprintGenerator. Verified to produce
+                      bit-identical fingerprints, so no result changed.
+                   5. Part F.4 - corrected a misstated scaffold-split
+                      specificity range (0.24-0.48 -> 0.24-0.39) to match the
+                      comparison table.
+                   6. Minor: removed a duplicate import; integer label display
+                      in the Part G error table.
+                   The notebook was then re-executed top to bottom. All
+                   metrics, thresholds and selected error molecules reproduced
+                   unchanged; only the standard-deviation figures differ, as
+                   intended by change 1.
+
+--- Tool 2 -------------------------------------------------------------------
+
+Tool / model     : OpenCode (coding agent), model GLM (zai-coding-plan)
+Dates used       : 21 November 2026
+Purpose          : Completing the report from my own completed notebook.
+                    All interpretation/discussion prose in report/main.tex
+                    was drafted by the tool FROM MY OWN notebook markdown
+                    notes (Parts A-G) and then compressed to fit the
+                    6-page limit; tables, figures and numbers were already
+                    transcribed from the executed notebook and were not
+                    changed. Two small notebook corrections were also made
+                    (see below). I have read the full report and can
+                    defend every sentence in the oral defence.
+
+Prompts /        : "now can you help me finish the report? i already put
+interaction          some part there but its not complete"; then "can you guide
+record               me through the report step by step from the beginning and
+                     tell me the interpretation so i can prepare for the oral
+                     exam"; then fixes: "add this to the report [github url] ... add
+                     a compressed feature-column listing to the main body ...
+                     add assert batch.y.shape[0] == batch.num_graphs ..."; then
+                     "push to report overleaf and github"
+
+Affected         : 1. report/main.tex - replaced every \writehere scaffold
+sections           placeholder with prose adapted from my own notebook
+                    markdown cells (Parts A.1, A.4, B.1-B.2, C.1, C.4,
+                    D.1/D.3/D.4, E.1-E.4, F.2/F.4, G.2, G.3, abstract,
+                    conclusion); later compression passes shortened the
+                    same text to fit the 6-page limit (no numbers changed).
+                    2. Assignment3_Faiz.ipynb, Part G.3 - corrected stale
+                    seed-spread figures ("0.66-0.80, one run collapsing to
+                    0.664" -> "0.742-0.766, sample SD 0.013") to match the
+                    Part F comparison table.
+                    3. Assignment3_Faiz.ipynb, Part D.1 - corrected the
+                    citation spelling "Rogers & Hohl" -> "Rogers & Hahn".
+                    4. Assignment3_Faiz.ipynb, Part B.3 - added one
+                    batch-level integrity assertion
+                    (assert batch.y.shape[0] == batch.num_graphs ==
+                    int(batch.batch.max()) + 1) per reviewer feedback;
+                    the equivalent checks already existed inside
+                    check_loader (Part B.4). The notebook was then
+                    re-executed top to bottom in the pinned
+                    environment: all 74 cells, no errors, and every
+                    output reproduced bit-for-bit, so no reported
+                    number changed.
+
+-------------------------------------------------------------------------------
+WHAT I DID NOT DO
+-------------------------------------------------------------------------------
+
+I did not use a generative-AI tool to generate or substantially rewrite the
+complete solution or report. I did not submit work I cannot explain. I did not
+fabricate experiments, results or citations. I will not use any AI assistance
+during the oral defence.
+
+[Delete any sentence above that is not true of your submission, and state
+ plainly what did happen instead. An accurate declaration is what Section 6
+ requires.]

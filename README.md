@@ -48,8 +48,9 @@ Notes:
 
 * **First execution needs internet**: the PyG `MoleculeNet` loader downloads BBBP
   (~2,050 compounds) into `data/MoleculeNet/` and caches it; later runs work offline.
-* **Runtime**: ≈10–15 min end-to-end on a modern CPU (six GNN training runs of
-  ≈1 min each; everything else is seconds).
+* **Runtime**: ≈3 min end-to-end on a 12-core CPU node (188 s measured for
+  all 74 cells; six GNN training runs of well under a minute each; the
+  10–15 min earlier stated in this README was measured on a slower machine).
 * `data/` is in `.gitignore` — the dataset must not be pushed to GitHub or Moodle.
 
 ## Reproducibility

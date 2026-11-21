@@ -220,3 +220,11 @@ __marimo__/
 .streamlit/secrets.toml
 
 data/
+# LaTeX build artifacts (report compiled on Overleaf / locally)
+report/main.aux
+report/main.bbl
+report/main.blg
+report/main.log
+report/main.out
+report/main.pdf
+report/main.synctex.gz
