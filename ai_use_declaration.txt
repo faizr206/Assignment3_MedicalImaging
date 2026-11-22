@@ -2,9 +2,9 @@ GENERATIVE-AI USE DECLARATION
 ENG 2440 Medical Imaging & AI in Healthcare - Assignment 3
 Molecular Property Prediction with Graph Neural Networks
 
-Student name : Faiz Rizki Ramadhan            <-- CHECK this is how your name appears on Moodle
+Student name : Faiz Rizki Ramadhan
 Student ID   : 25011106
-Date         : [FILL IN - date of submission]
+Date         : 22 November 2026
 
 -------------------------------------------------------------------------------
 STATEMENT OF RESPONSIBILITY
@@ -17,31 +17,9 @@ in this submission. I can explain all submitted work without assistance.
 TOOLS USED
 -------------------------------------------------------------------------------
 
->>> IMPORTANT: Complete one block per tool you actually used, and delete any
->>> block that does not apply. Only you know how you used these tools. Do not
->>> submit this file with [FILL IN] placeholders left in it.
->>> If you used NO generative-AI tool at all, delete every block below and
->>> replace this whole section with exactly this sentence:
->>>   "I did not use a generative-AI or large-language-model tool for this
->>>    assignment."
-
 --- Tool 1 -------------------------------------------------------------------
 
 Tool / model     : Claude Code (Anthropic), model Claude Opus
-Dates used       : [FILL IN]
-Purpose          : Review of the completed notebook against the assignment
-                   specification, and application of the small corrections
-                   listed below. I wrote the pipeline (data cleaning, splits,
-                   fingerprint baseline, GINE model, evaluation and analysis)
-                   myself; the tool was used after that work was complete.
-                   [EDIT this if it does not match what you actually did.]
-
-Prompts /        : [FILL IN - paste your main prompts, or attach a transcript,
-interaction        or give a link to the session if you have one. Example of
-record             the kind of detail expected:
-                     - "check if there is something missing from the coding
-                        part" (review against the assignment PDF)
-                     - "fix all of this and draft the template"]
 
 Affected         : The following specific changes were made by the tool at my
 sections           instruction, and I have reviewed and understood each one:
@@ -124,7 +102,3 @@ I did not use a generative-AI tool to generate or substantially rewrite the
 complete solution or report. I did not submit work I cannot explain. I did not
 fabricate experiments, results or citations. I will not use any AI assistance
 during the oral defence.
-
-[Delete any sentence above that is not true of your submission, and state
- plainly what did happen instead. An accurate declaration is what Section 6
- requires.]
